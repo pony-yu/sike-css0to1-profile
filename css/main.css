@@ -1,31 +1,144 @@
 body{
+    font-family: 'Open Sans','helvetica',arial,sans-serif;
+    font-weight: 300;
+    color: #62686f;
+  /*固定背景*/
+  background-size:cover;
   background-image: url(../img/bg5.jpg);
   background-attachment: fixed;
-  background-size: cover;
   background-position: center;
-}
+  /*background-repeat: no-repeat;*/
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 300;
+  }
+
+/*整个内容居中*/
 .container{
   width: 960px;
   margin: 0 auto;
 }
-.main-header{
-  margin-top: 70px;
+.main-header{		/*头部背景*/
   background-image: url(../img/banner.jpg);
-  text-align: center;
-  font-weight:300;
-  font-size: 30px;
-  font-family: 'Open Sans','helvetica',arial,sans-serif;
-  text-shadow: 1px 5px rgba(0,0,0,0.3);
+  text-align: center;/*头部内容居中*/
+  /*调整字体样式*/
+
   padding: 1px;
+  margin-top: 150px;
+  /*margin-bottom: 50px;*/
 }
 .main-header__avatar{
-
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0px 2px 2px beige;
   border-radius: 999px;
   margin-top: -70px;
   margin-bottom: 10px;
-
 }
 .main-header h1{
+  color:#fff;
+  font-weight: 300;
+  font-size: 50px;
+  font-family: 'Open Sans','helvetica',arial,sans-serif;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
   margin-bottom: 20px;
+}
+
+
+
+
+
+.main-nav{
+  text-align: center;
+  background-color: green;
+  padding: 1px;
+}
+.main-nav ul{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+.main-nav ul li{
+  margin: 15px 10px;
+  display: inline-block;
+}
+.main-nav ul li a{
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-nav ul li a:hover{
+  text-decoration: underline;
+}
+
+
+
+.info-section{
+  background-color: #fff;
+  padding: 30px 60px;
+}
+.whatido{
+  padding: 1px;
+}
+.whatido header{
+  text-align: center;
+}
+.info-section header h2{
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.info-section__description{
+  font-style: italic;
+}
+.whatido__skill-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+  /*采用overflow去除浮动*/
+  /*overflow: hidden;*/
+
+
+}
+.whatido__skill-list:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.whatido__skill{
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  width: 33.3%;
+
+}
+.whatido__skill-list li{
+  text-align: center;
+  float: left;
+
+}
+.whatido__skill--code {
+  background-image: url(../img/skill-code.png);
+}
+
+.whatido__skill--design {
+  background-image: url(../img/skill-design.png);
+}
+
+.whatido__skill--product {
+  background-image: url(../img/skill-product.png);
+}
+.whatido header h2::after{
+  width: 60px;
+  content: "";
+  display: table;
+  border-bottom: 3px solid black;
+  margin: 9px auto;
+
 }
